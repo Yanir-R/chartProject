@@ -1,0 +1,45 @@
+<mat-tab-group dynamicHeight>
+  <mat-tab label="Stacked area">
+    <div class="example-small-box mat-elevation-z4">
+      <app-widget-area ></app-widget-area>
+    </div>
+  </mat-tab>
+  <mat-tab label="donut Options">
+    <div class="example-small-box mat-elevation-z4" flexLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+     <app-widget-donutOptions></app-widget-donutOptions>
+     <app-widget-donutOptions></app-widget-donutOptions>
+    </div>
+  </mat-tab>
+</mat-tab-group>
+
+<br>
+
+<mat-divider></mat-divider>
+
+<br>
+
+<div fxLayout="row" fxLayoutAlign="space-between center" class="stats-cards">
+  <mat-card fxFlex="22">
+  <app-widget-card label="New Users" total="12k" percentage="50%" [data]="cards"></app-widget-card>
+
+  </mat-card>
+  <mat-card fxFlex="22">
+    <app-widget-card label="Users retention" total="10k" percentage="40%" [data]="cards"></app-widget-card>
+
+  </mat-card>
+  <mat-card fxFlex="22">
+    <app-widget-card label="Users engagement" total="8k" percentage="30%" [data]="cards"></app-widget-card>
+
+  </mat-card>
+  <mat-card fxFlex="22">
+    <app-widget-card label="Referral" total="6k" percentage="20%" [data]="cards"></app-widget-card>
+
+  </mat-card>
+</div>
+<br>
+<mat-divider></mat-divider>
+<br>
+<div flxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="20px">
+  <div fxFlex="60">Table</div>
+  <div fxFlex="40"><app-widget-pie></app-widget-pie></div>
+</div>
